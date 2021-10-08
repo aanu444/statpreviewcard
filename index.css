@@ -5,7 +5,7 @@ body {
   color: #fff;
 }
 
-section,
+header,
 div {
   border: 0px solid #fff;
 }
@@ -23,6 +23,7 @@ div {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 120px;
+  min-height: 420px;
 }
 
 .one .container .insights,
@@ -43,6 +44,7 @@ div {
 .two .container .insights h1 {
   font-size: 1.8rem;
   margin-left: 30px;
+  margin-top: 80px;
 }
 
 .one .container .insights h1 span,
@@ -140,6 +142,9 @@ div {
   .two .container .insights p {
     margin-left: 0;
     text-align: center;
+  }
+  .two .container .insights h1 {
+    margin-top: 30px;
   }
   .two .container .insights p {
     padding: 5px;
