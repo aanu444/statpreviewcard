@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background-color: #030118;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+section,
+div {
+  border: 0px solid #fff;
+}
+
+.one .container,
+.two .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 120px;
+}
+
+.one .container .insights,
+.one .container .image,
+.two .container .insights,
+.two .container .image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.one .container .insights,
+.two .container .insights {
+  background-color: #280c45;
+  border-radius: 10px 0 0 10px;
+}
+
+.one .container .insights h1,
+.two .container .insights h1 {
+  font-size: 1.8rem;
+  margin-left: 30px;
+}
+
+.one .container .insights h1 span,
+.two .container .insights h1 span {
+  color: #cc60ff;
+}
+
+.one .container .insights p,
+.two .container .insights p {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+.one .container .insights .text-container,
+.two .container .insights .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 30px;
+}
+
+.one .container .insights .text-container .text,
+.two .container .insights .text-container .text {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin-left: 10px;
+  min-height: 80px;
+}
+
+.one .container .insights .text-container .text p,
+.two .container .insights .text-container .text p {
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 0;
+}
+
+.one .container .insights .text-container .text span,
+.two .container .insights .text-container .text span {
+  color: grey;
+  font-size: 0.8rem;
+  display: block;
+  text-align: center;
+}
+
+.one .container .image,
+.two .container .image {
+  background-image: url("images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+.one .container .image .image-front,
+.two .container .image .image-front {
+  background-color: rgba(111, 16, 156, 0.6);
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.two {
+  display: none;
+}
+
+@media only screen and (max-width: 426px) {
+  .one {
+    display: none;
+  }
+  .two {
+    display: block;
+  }
+  .two .container {
+    margin-top: 80px;
+  }
+  .two .container .image,
+  .two .container .insights {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .two .container .image {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+  .two .container .image .image-front {
+    border-radius: 10px 10px 0 0;
+  }
+  .two .container .insights {
+    border-radius: 0 0 10px 10px;
+  }
+  .two .container .insights h1,
+  .two .container .insights p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .two .container .insights p {
+    padding: 5px;
+  }
+  .two .container .insights .text-container .text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$backgroundColor: #030118;
+$primaryColor: #280c45;
+$secondaryColor: #cc60ff;
+$font: "Roboto", sans-serif;
+
+body {
+  background-color: $backgroundColor;
+  font-family: $font;
+  color: #fff;
+}
+
+section,
+div {
+  border: 0px solid #fff;
+}
+
+.one,
+.two {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 120px;
+
+    .insights,
+    .image {
+      flex-basis: 40%;
+    }
+
+    .insights {
+      background-color: $primaryColor;
+      border-radius: 10px 0 0 10px;
+      h1 {
+        font-size: 1.8rem;
+        margin-left: 30px;
+
+        span {
+          color: $secondaryColor;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-left: 30px;
+      }
+
+      .text-container {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 30px;
+
+        .text {
+          flex-basis: 30%;
+          margin-left: 10px;
+          min-height: 80px;
+
+          p {
+            font-weight: bolder;
+            font-size: 1rem;
+            text-align: center;
+            margin-left: 0;
+          }
+
+          span {
+            color: grey;
+            font-size: 0.8rem;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .image {
+      background-image: url("images/image-header-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0 10px 10px 0;
+
+      .image-front {
+        background-color: rgba(111, 16, 156, 0.6);
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
+.two {
+  display: none;
+}
+
+@media only screen and (max-width: 426px) {
+  .one {
+    display: none;
+  }
+
+  .two {
+    display: block;
+
+    .container {
+      margin-top: 80px;
+      .image,
+      .insights {
+        flex-basis: 100%;
+      }
+
+      .image {
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+
+        .image-front {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .insights {
+        border-radius: 0 0 10px 10px;
+
+        h1,
+        p {
+          margin-left: 0;
+          text-align: center;
+        }
+
+        p {
+          padding: 5px;
+        }
+
+        .text-container {
+          .text {
+            flex-basis: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
