@@ -155,4 +155,33 @@ div {
     margin-left: 0;
   }
 }
+
+@media only screen and (min-width: 427px) and (max-width: 750px) {
+  .one {
+    display: none;
+  }
+  .two {
+    display: block;
+  }
+  .two .container .image,
+  .two .container .insights {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .two .container .image {
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  .two .container .image .image-front {
+    border-radius: 10px 10px 0 0;
+  }
+  .two .container .insights {
+    border-radius: 0 0 10px 10px;
+  }
+  .two .container .insights h1,
+  .two .container .insights p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */
